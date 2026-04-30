@@ -1,158 +1,234 @@
+/* 1. SETUP & VARIABLES */
 :root {
     --primary-pink: #ffafbd;
     --deep-rose: #c06c84;
-    --accent-pink: #ff7495; /* A more vibrant, 'alive' pink */
-    --hover-pink: #ff4d79;  /* A deeper shade for the hover state */
+    --accent-pink: #ff85a1; /* Unified cutesy pink */
+    --hover-pink: #ff4d79;
+    --soft-white: rgba(255, 255, 255, 0.95);
+    --border-pink: #ffcad4;
 }
 
 body {
     background: linear-gradient(135deg, #ffafbd, #ffc3a0);
     min-height: 100vh;
+    margin: 0;
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Georgia', serif;
-    margin: 0;
-    padding: 20px;
+    font-family: 'Quicksand', sans-serif; /* Softer base font */
     overflow-x: hidden;
 }
 
-/* Increased max-width to fit side-by-side content */
+/* 2. HOMEPAGE STYLES */
+.home-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.home-content {
+    background: var(--soft-white);
+    padding: 50px 30px;
+    border-radius: 40px;
+    border: 4px dashed var(--border-pink);
+    box-shadow: 0 20px 0px var(--border-pink);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+.home-content h1 {
+    font-family: 'Gaegu', cursive;
+    font-size: 3.5rem;
+    color: var(--accent-pink);
+    margin: 0 0 10px 0;
+}
+
+.month-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.month-tile {
+    background: #fff;
+    border: 2px solid var(--border-pink);
+    color: var(--accent-pink);
+    border-radius: 20px;
+    padding: 12px 25px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.month-tile:hover {
+    background: #ffe5ec;
+    transform: scale(1.1) rotate(3deg);
+}
+
+/* 3. MAIN INTERFACE (LETTER PAGE) */
 .container {
     text-align: center;
-    max-width: 1100px; 
+    max-width: 1100px;
     width: 100%;
+    margin: auto;
 }
 
+/* The Fixed Floating Title */
 .title {
+    font-family: 'Gaegu', cursive;
+    font-size: 2.2rem;
     color: white;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-    margin-bottom: 30px;
+    background-color: var(--accent-pink);
+    padding: 12px 35px;
+    border-radius: 50px;
+    display: table;
+    margin: 0 auto 30px auto;
+    box-shadow: 0 6px 0px var(--border-pink);
+    border: 2px dashed rgba(255, 255, 255, 0.4);
+    animation: titleFloat 3s infinite ease-in-out;
 }
 
-/* NEW: The Flexbox Wrapper */
 .main-content {
     display: flex;
-    flex-direction: row; /* Side-by-side */
+    flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    gap: 40px; /* Space between photo and letter */
+    gap: 40px;
     margin-bottom: 30px;
 }
 
-/* Polaroid Style - Left Side */
+/* Polaroid Side */
 .polaroid-frame {
     flex: 1;
     max-width: 400px;
     background: white;
-    padding: 15px 15px 30px 15px;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-    transform: rotate(-3deg);
-    transition: transform 0.5s ease;
+    padding: 15px 15px 40px 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+    transform: rotate(-2deg);
+    transition: 0.5s;
 }
 
 .polaroid-frame:hover {
-    transform: rotate(0deg) scale(1.05);
+    transform: rotate(0deg) scale(1.02);
 }
 
 .polaroid-frame img {
     width: 100%;
     height: auto;
-    filter: sepia(20%);
-    display: block;
+    border-radius: 2px;
 }
 
-.caption {
-    font-family: 'Cursive', sans-serif;
-    margin-top: 15px;
-    color: #444;
-}
-
-/* Letter Box Style - Right Side */
+/* Letter Side */
 .letter-box {
-    flex: 1.5; /* Makes the letter area slightly wider */
-    background: rgba(255, 255, 255, 0.9);
-    padding: 30px;
-    border-radius: 15px;
-    line-height: 1.8;
-    text-align: left;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    flex: 1.5;
+    background: var(--soft-white);
+    padding: 40px;
+    border-radius: 30px;
+    border: 3px solid #fff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
     min-height: 400px;
+    text-align: left;
+}
+
+#letter-title {
+    font-family: 'Gaegu', cursive;
+    color: var(--accent-pink);
+    font-size: 2rem;
+    margin-top: 0;
 }
 
 #typed-text {
-    white-space: pre-wrap;
-    word-wrap: break-word;
+    font-family: 'Quicksand', sans-serif;
+    line-height: 1.8;
     font-size: 1.1rem;
-    color: #444;
+    color: #555;
+    white-space: pre-wrap;
 }
 
-/* Navigation & Buttons */
+/* 4. NAVIGATION BUTTONS */
 .navigation {
     display: flex;
     justify-content: center;
     gap: 15px;
-    margin: 20px 0;
+    margin-top: 20px;
+    flex-wrap: wrap;
 }
 
 .nav-btn {
-    /* Solid background instead of transparent */
-    background-color: #ffe0e9; 
-    color: #ff5d8f; 
-    border: none; /* No border for a modern 'pill' look */
-    padding: 12px 28px;
-    border-radius: 50px; /* Fully rounded 'pill' shape */
-    font-family: 'Segoe UI', sans-serif;
+    background-color: #ffeef2;
+    color: var(--accent-pink);
+    border: none;
+    padding: 12px 25px;
+    border-radius: 50px;
     font-weight: 700;
     cursor: pointer;
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy transition */
-    min-width: 150px;
-    box-shadow: 0 4px 10px rgba(255, 93, 143, 0.2);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 4px 0px var(--border-pink);
 }
 
 .nav-btn:hover:not(:disabled) {
-    background-color: #ff7495; /* Vibrant Pink */
+    background-color: var(--accent-pink);
     color: white;
-    transform: translateY(-3px) scale(1.05); /* Lifts up and grows slightly */
-    box-shadow: 0 8px 20px rgba(255, 116, 149, 0.4);
-}
-
-.nav-btn:active {
-    transform: translateY(0) scale(0.98);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 0px var(--deep-rose);
 }
 
 .nav-btn:disabled {
-    background-color: #f0f0f0;
-    color: #bcbcbc;
+    opacity: 0.5;
     cursor: not-allowed;
     box-shadow: none;
 }
 
-/* Shutter Effect Animation */
-@keyframes shutter {
-    0% { opacity: 1; }
-    50% { opacity: 0.3; filter: brightness(1.5); }
-    100% { opacity: 1; }
+/* 5. ANIMATIONS */
+@keyframes titleFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-8px); }
 }
 
-.shutter-effect {
-    animation: shutter 0.4s ease-out;
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(0deg); }
 }
 
-/* RESPONSIVE: Stack them on top of each other for Mobile */
+.home-screen::before {
+    content: '☁️ ✨ 🌸 💖';
+    position: absolute;
+    top: 15%;
+    font-size: 2rem;
+    opacity: 0.7;
+    animation: float 6s infinite ease-in-out;
+}
+
+/* 6. RESPONSIVE */
 @media (max-width: 850px) {
     .main-content {
         flex-direction: column;
         align-items: center;
     }
-    
     .polaroid-frame {
         transform: rotate(0deg);
-        margin-bottom: 20px;
+        max-width: 90%;
     }
-    
     .letter-box {
         width: 100%;
-        box-sizing: border-box;
+    }
+    .title {
+        font-size: 1.6rem;
     }
 }
+
+.hidden { display: none !important; }

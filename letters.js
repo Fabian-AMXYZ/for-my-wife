@@ -58,6 +58,7 @@ Jello the birthday boy`
 ];
 
 let currentIdx = 0;
+let currentImgIdx = 0;
 
 function showLetter() {
     const current = allLetters[currentIdx];
@@ -109,7 +110,38 @@ function updateButtonStates() {
     if(nextBtn) nextBtn.disabled = (currentIdx === allLetters.length - 1);
 }
 
-// Start everything on load
-window.onload = () => {
+// Function to create the menu tiles automatically
+function buildMenu() {
+    const menu = document.getElementById("month-menu");
+    menu.innerHTML = ""; // Clear existing
+
+    allLetters.forEach((letter, index) => {
+        const btn = document.createElement("button");
+        btn.className = "month-tile";
+        // This takes just the Month name (e.g., "February") from your title
+        btn.innerHTML = letter.title.split(" - ")[0]; 
+        btn.onclick = () => selectMonth(index);
+        menu.appendChild(btn);
+    });
+}
+
+function selectMonth(index) {
+    currentIdx = index;
+    
+    // Hide Homepage, Show Letter
+    document.getElementById("homepage").classList.add("hidden");
+    document.getElementById("main-interface").classList.remove("hidden");
+    
     showLetter();
+}
+
+function goHome() {
+    // Show Homepage, Hide Letter
+    document.getElementById("homepage").classList.remove("hidden");
+    document.getElementById("main-interface").classList.add("hidden");
+}
+
+// Update your window.onload
+window.onload = () => {
+    buildMenu(); 
 };
