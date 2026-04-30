@@ -47,7 +47,7 @@ So I apologize on that as well. Lastly, I agree naman na parang isang dump yung 
 Like ughh! Other than that, sorry ulit for making you mad/sad by making a mean tone to you by using "literally" even though it was never my intention to "look down" on you huhu.
 
 Asides all of that, thank you for making me look for Project Hail Mary it was such a goated movie! AMAZE AMAZE! The scene, cinematography, and ost's basically everything!
-Would you still love me if I was an alien? Question? :P. I love you so much bebe, I cannot wait to meet you tomorrow! I am so excited talaga to finally meet gf after 2 months of hiatus HAHAHA.
+Would you still love me if I was an alien? Question? :P. I love you so much bebe, I cannot wait to meet you tomorrow! I am so excited talaga to finally meet my gf after 2 months of hiatus HAHAHA.
 Especially during this month sobrang hellish! Like exam week and yung defense namin! Grabe talaga paghahabol namin sa requirements! Kaya nawalan tayo bebe time! Nakakasira talaga yung pag-aaral at OJT sa bebe time na yan!
 
 Let's catch up tomorrow omki? I really like you yapping around me it feels so comforting. I love you so much.
