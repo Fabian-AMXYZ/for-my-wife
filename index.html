@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Letters | To My Wife</title>
+    <link rel="stylesheet" href="letters.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="title">My Monthly Appreciation to you</h1>
+
+    <!-- New wrapper for the side-by-side layout -->
+    <div class="main-content">
+        <!-- Left Side: Photography -->
+        <div class="polaroid-frame" id="main-photo">
+            <img src="" alt="">
+            <p class="caption" id="photo-caption">Year One: The Beginning</p>
+        </div>
+
+        <!-- Right Side: The Letter -->
+        <div class="letter-box">
+            <h2 id="letter-title" style="color: #ff85a1; margin-bottom: 10px;"></h2>
+            <p id="typed-text"></p>
+        </div>
+    </div>
+
+    <!-- Navigation and Surprise remain centered below -->
+    <div class="navigation">
+        <button onclick="prevLetter()" class="nav-btn">Previous Month</button>
+        <button onclick="nextLetter()" class="nav-btn">Next Month</button>
+    </div>
+
+    <script src="letters.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+:root {
+    --primary-pink: #ffafbd;
+    --deep-rose: #c06c84;
+    --accent-pink: #ff7495; /* A more vibrant, 'alive' pink */
+    --hover-pink: #ff4d79;  /* A deeper shade for the hover state */
+}
+
+body {
+    background: linear-gradient(135deg, #ffafbd, #ffc3a0);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Georgia', serif;
+    margin: 0;
+    padding: 20px;
+    overflow-x: hidden;
+}
+
+/* Increased max-width to fit side-by-side content */
+.container {
+    text-align: center;
+    max-width: 1100px; 
+    width: 100%;
+}
+
+.title {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 30px;
+}
+
+/* NEW: The Flexbox Wrapper */
+.main-content {
+    display: flex;
+    flex-direction: row; /* Side-by-side */
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px; /* Space between photo and letter */
+    margin-bottom: 30px;
+}
+
+/* Polaroid Style - Left Side */
+.polaroid-frame {
+    flex: 1;
+    max-width: 400px;
+    background: white;
+    padding: 15px 15px 30px 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    transform: rotate(-3deg);
+    transition: transform 0.5s ease;
+}
+
+.polaroid-frame:hover {
+    transform: rotate(0deg) scale(1.05);
+}
+
+.polaroid-frame img {
+    width: 100%;
+    height: auto;
+    filter: sepia(20%);
+    display: block;
+}
+
+.caption {
+    font-family: 'Cursive', sans-serif;
+    margin-top: 15px;
+    color: #444;
+}
+
+/* Letter Box Style - Right Side */
+.letter-box {
+    flex: 1.5; /* Makes the letter area slightly wider */
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    border-radius: 15px;
+    line-height: 1.8;
+    text-align: left;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+    min-height: 400px;
+}
+
+#typed-text {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 1.1rem;
+    color: #444;
+}
+
+/* Navigation & Buttons */
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.nav-btn {
+    /* Solid background instead of transparent */
+    background-color: #ffe0e9; 
+    color: #ff5d8f; 
+    border: none; /* No border for a modern 'pill' look */
+    padding: 12px 28px;
+    border-radius: 50px; /* Fully rounded 'pill' shape */
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); /* Bouncy transition */
+    min-width: 150px;
+    box-shadow: 0 4px 10px rgba(255, 93, 143, 0.2);
+}
+
+.nav-btn:hover:not(:disabled) {
+    background-color: #ff7495; /* Vibrant Pink */
+    color: white;
+    transform: translateY(-3px) scale(1.05); /* Lifts up and grows slightly */
+    box-shadow: 0 8px 20px rgba(255, 116, 149, 0.4);
+}
+
+.nav-btn:active {
+    transform: translateY(0) scale(0.98);
+}
+
+.nav-btn:disabled {
+    background-color: #f0f0f0;
+    color: #bcbcbc;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+
+/* Shutter Effect Animation */
+@keyframes shutter {
+    0% { opacity: 1; }
+    50% { opacity: 0.3; filter: brightness(1.5); }
+    100% { opacity: 1; }
+}
+
+.shutter-effect {
+    animation: shutter 0.4s ease-out;
+}
+
+/* RESPONSIVE: Stack them on top of each other for Mobile */
+@media (max-width: 850px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .polaroid-frame {
+        transform: rotate(0deg);
+        margin-bottom: 20px;
+    }
+    
+    .letter-box {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
