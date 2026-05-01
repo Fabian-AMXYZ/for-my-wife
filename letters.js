@@ -118,7 +118,6 @@ function buildMenu() {
     allLetters.forEach((letter, index) => {
         const btn = document.createElement("button");
         btn.className = "month-tile";
-        // This takes just the Month name (e.g., "February") from your title
         btn.innerHTML = letter.title.split(" - ")[0]; 
         btn.onclick = () => selectMonth(index);
         menu.appendChild(btn);
@@ -141,7 +140,7 @@ function goHome() {
     document.getElementById("main-interface").classList.add("hidden");
 }
 
-// Update your window.onload
+// Updates window.onload
 window.onload = () => {
     buildMenu(); 
 };
