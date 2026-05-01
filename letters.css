@@ -207,27 +207,94 @@ body {
 .home-screen::before {
     content: '☁️ ✨ 🌸 💖';
     position: absolute;
-    top: 15%;
-    font-size: 2rem;
+    top: 8%;
+    font-size: 1.5rem;
+    z-index: 0;
     opacity: 0.7;
     animation: float 6s infinite ease-in-out;
 }
 
 /* 6. RESPONSIVE */
 @media (max-width: 850px) {
+    /* 1. Main Layout Adjustments */
+    .container {
+        padding: 10px; /* Give the whole container a little breathing room */
+    }
+
     .main-content {
         flex-direction: column;
         align-items: center;
+        gap: 20px;
     }
+
+    /* 2. Polaroid Fixes */
     .polaroid-frame {
         transform: rotate(0deg);
-        max-width: 90%;
+        max-width: 95%; /* Make the photo take up more width */
+        padding: 10px 10px 25px 10px; /* Slightly tighter padding */
     }
+
+    /* 3. Letter Box Fixes (Refers to image_bc2975.png) */
     .letter-box {
         width: 100%;
+        padding: 25px 20px; /* Better padding so text doesn't touch the edges */
+        box-sizing: border-box;
+        min-height: auto; /* Let the box grow with the text */
     }
-    .title {
-        font-size: 1.6rem;
+
+    #letter-title {
+        font-size: 1.6rem; /* Slightly smaller title to avoid weird wrapping */
+        line-height: 1.2;
+    }
+
+    #typed-text {
+        font-size: 1rem; /* Standard readable size for mobile */
+        line-height: 1.6;
+    }
+
+    /* 4. Navigation Hub (Mobile Optimization) */
+    .navigation {
+        flex-direction: row; /* Keep them in a row if possible */
+        flex-wrap: wrap;     /* But wrap them if the names are long */
+        gap: 8px;
+        margin-top: 20px;
+    }
+
+    .nav-btn {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+        min-width: 90px; /* Smaller buttons to fit 3-across better */
+        flex: 1; /* Makes all 3 buttons equal width */
+    }
+}
+
+/* Specific fix for the Homepage on smaller phones */
+@media (max-width: 480px) {
+    .home-content {
+        padding: 30px 15px; /* Less padding inside the box */
+        width: 92%;        /* Make the box wider on the screen */
+        box-sizing: border-box;
+    }
+
+    .home-content h1 {
+        font-size: 2.2rem; /* Shorter title font so it doesn't break into 4 lines */
+        line-height: 1.1;
+        margin-bottom: 10px;
+    }
+
+    .month-grid {
+        gap: 10px; /* Tighter gap so buttons stay closer */
+    }
+
+    .month-tile {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+        flex: 1 1 40%; /* This forces buttons to try and sit 2-per-row */
+    }
+
+    .profile-circle {
+        width: 120px; /* Slightly smaller profile pic for more room */
+        height: 120px;
     }
 }
 
