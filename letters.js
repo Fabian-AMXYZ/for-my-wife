@@ -68,7 +68,7 @@ Second, you were never a afterthought for me, I always wait naman for you to be 
 And lastly, I apologize once again for being such a neglectful bf all around lagi nalang kita nasasaktan :(( lagi nalang naiyak bebe ko. 
 
 Legit yung di ko nakita na tumawag ka kasi I was away sa pc. I really wanted to have a call with you nun kaya nga nung nakita kita online sa phone, 
-I initiated for a call diba :(( kaso tinawanan mo lang me <//33. Aurgh now that I realize, it is true na inigawan ka ng oras. 
+I initiated for a call diba :(( kaso tinawanan mo lang me. Aurgh now that I realize, it is true na inigawan ka ng oras. 
 Sorry baby, I was having fun streaming but despite all that I was also neglecting my supportive, lovely, pretty and kind wife of mine. 
 When you joined nga to my stream the first time, me was so happy! But then again, I was more happy when we had a proper bebe time talaga. I love you.
 
