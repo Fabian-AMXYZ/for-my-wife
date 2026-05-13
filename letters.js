@@ -57,7 +57,7 @@ Jello the birthday boy`
     },
     {
         title: "May 14th - Month 15",
-        image: "img/IMG_2658.png",
+        image: "img/IMG_2658-1.jpg",
         caption: "Sincere apology for neglecting my jowa",
         body: `Hello, my supportive jowa. It's kinda sad that puro away tayo this month :((. I know you said its the heat kaya nagiging emotional ka or madali mairita. I will never stop to be understanding despite the arguments. And regarding sa sudden changes of me bigla nag-iistream and nawalan na ko oras sayo. That's my fault naman talaga, first of all I didn't even balance it properly. Like you said kelan nga ba naging hapon bebe time natin? Second, you were never a afterthought for me, I always wait naman for you to be active sa ig and all tas aayain ka mag-call but I guess that's my fault for not communicating it to you properly that I can always leave the call/end the stream kasi ikaw yan eh. And lastly, I apologize once again for being such a neglectful bf all around lagi nalang kita nasasaktan :(( lagi nalang naiyak bebe ko.
 
