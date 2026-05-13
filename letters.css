@@ -142,6 +142,10 @@ body {
     box-shadow: 0 10px 25px rgba(0,0,0,0.05);
     min-height: 400px;
     text-align: left;
+    max-height: 70vh; /* Prevents the box from going off-screen */
+    overflow-y: auto; /* Adds a scrollbar when text is too long */
+    padding-right: 15px; /* Extra space for the scrollbar */
+}
 }
 
 #letter-title {
@@ -298,12 +302,7 @@ body {
     }
 }
 
-.letter-box {
-    /* ... existing code ... */
-    max-height: 70vh; /* Prevents the box from going off-screen */
-    overflow-y: auto; /* Adds a scrollbar when text is too long */
-    padding-right: 15px; /* Extra space for the scrollbar */
-}
+
 
 
 .hidden { display: none !important; }
