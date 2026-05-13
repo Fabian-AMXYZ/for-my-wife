@@ -57,8 +57,8 @@ Jello the birthday boy`
     },
     {
         title: "May 14th - Month 15",
-        image: "",
-        caption: "Sorry for being neglectful",
+        image: "img/IMG_2658.png",
+        caption: "Sincere apology for neglecting my jowa",
         body: `Hello, my supportive jowa. It's kinda sad that puro away tayo this month :((. I know you said its the heat kaya nagiging emotional ka or madali mairita. I will never stop to be understanding despite the arguments. And regarding sa sudden changes of me bigla nag-iistream and nawalan na ko oras sayo. That's my fault naman talaga, first of all I didn't even balance it properly. Like you said kelan nga ba naging hapon bebe time natin? Second, you were never a afterthought for me, I always wait naman for you to be active sa ig and all tas aayain ka mag-call but I guess that's my fault for not communicating it to you properly that I can always leave the call/end the stream kasi ikaw yan eh. And lastly, I apologize once again for being such a neglectful bf all around lagi nalang kita nasasaktan :(( lagi nalang naiyak bebe ko.
 
 I am gonna stop yapping about it na and gonna be thankful for another month of us being together! Thank you for the date nung May 1 bebe despite the 2 months of us not meeting :(( aurgh. I am proud to say that congrats on finishing your OJT!! I was proud nga nung nakita kita asa harap ng camera trying to advertise the products na meron kayo! Me was happy on that day to see my baby doing her best. Goodluck on your next journey bebe, despite all the stress you did it! Goodluck on your final interview hopefully you get it and once again sorry :((. I love you so so much omki?
