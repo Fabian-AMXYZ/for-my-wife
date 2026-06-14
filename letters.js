@@ -82,7 +82,31 @@ I miss you so much baby ko...
 
 Yours truly,
 Angelo your bad bf!`
-}
+    },
+    {
+        title: "June 14th - Month 16",
+        image: "img/mywife.jpg",
+        caption: "Happy 16th! My pretty angel wife",
+        body: `Hi!! My hardworking and kawawang jowa kasi laging OT
+
+I miss you so much my baby :((, want na kita makita but then again sobrang busy mo na and hirap din magipon atm dahil wala me pasok na huhu. 
+Kaya di din kita maaya ng dates even though I really want to! And samahan mo pa na sobrang bad timing ng PLDT and Meralco minsan like hirap na nga magbebe time tas nakikisali pa sila.
+And bebe? Remember what I said before that I'll always be on your side and support what decisions you would make. I support your decisions on sending the resign letter when you get the sweldo!
+Lalo na when they assign stuff na wala sa job description mo which is unacceptable naman talaga HAHAHA like false advertisement but in work environment.
+Still I am very proud of you still trying to do your best despite all the stress you're having right now sa work. I'll be here lagi to listen to your rants and problems you encounter. 
+I always love listening to your yapping especially if its about you!
+
+Tas nakalimutan na natin magbigayan ng chika HAHAHA. Let's have chika nalang siguro when we meet? I really miss you na talaga I wanna hug and hold your hands :((( tas kiss ka madami as always.
+Babawi me sayo once I graduate and get a job gagala us talaga and have so many memorable dates here and there.
+I'm always ALWAYS thankful despite the busy schedule you have you still try to have a bebe time with me! Listening to music, watching smosh etc etc.
+I love you so so much my pretty wife and I miss you so much as well. If I could I would hug you everytime you get home to lift your mood every night you OT.
+Hopefully you had fun with your friends kahit 1 day and a half siya because of your work na biglang pinapapasok kayo out of nowhere huhu.
+Sana tayo naman mag-date hehe, I love you so much! And Happy 16th!
+
+Yours truly,
+Gelo your future husband :P
+`
+    }
 ];
 
 let currentIdx = 0;
