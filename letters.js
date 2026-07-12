@@ -106,7 +106,27 @@ Sana tayo naman mag-date hehe, I love you so much! And Happy 16th!
 Yours truly,
 Gelo your future husband :P
 `
-    }
+    },
+    {
+        title: "July 14th - Month 17",
+        image: "img/cat-meme-wave-emoji.gif",
+        caption: "Happy 17th monthsary",
+        body: `Halloooo!! Happy Happy 17th monthsary my bebe!
+
+How are you? I know sobrang busy ka sa work but I will keep reminding you that I love you everyday and I miss you so much lagi lagi! And like I always say if ever na we didn't get to spend time together, we can find time naman/bawi whenever we can. Pero ayon, can't believe we're about to graduate next month na! It was such a long and unexpected journey to meet you out of nowhere but it was so worth it!
+A few more months and mag-to two years na tayo together HAHAHA! Ang bilis talaga ng oras, and I am proud of you for still staying despite the exploitation and stress na nararanasan mo sa work.
+
+Konting tiis pa bebe we can finally have a proper date and go to places na gusto natin! Hopefully the next job you get would be a better environment for you to grow and malaki din sahod. 
+I really miss you sobra and I wanna work na din talaga so I can get money and spoil you more and more. But ayon need ko diploma arayq huhuh. Please be patient with me bebe ko!
+Like I said din last month I am thankful for the time despite getting home late and the busy schedule you have, sinusubukan mo pa din lagi lagi. I love you so much bebe ko!
+You deserve a good rest sana makuha mo siya and still get paid HAHAHAH. Dami mo pang utang na kwento sakin bebe :P nakakalimutan mo na ata isa isa kasi di mo agad sinasabi.
+Pero ayon another month of us loving each other hehe. Kelan mo kaya hihiramin phone ko or sabihin natin kelan kaya tayo makakapag date HAHAHA sobrang busy kasi bebe ko eh. Hindi na maaya sa date sadly.
+
+Hopefully we can meet na talaga kasi sobrang miss na kita! Until then, I will always be here to support you and love you no matter what happens!
+
+Yours truly,
+Jello your medicine(?)
+    `}
 ];
 
 let currentIdx = 0;
